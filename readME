@@ -1,0 +1,3 @@
+Rodar sass
+
+sass --watch sass/app.scss:css/style.min.css
