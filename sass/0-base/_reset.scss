@@ -1,3 +1,5 @@
+@use 'variables';
+
 * {
     margin: 0;
     padding: 0;
@@ -33,4 +35,37 @@ li {
     width: 90%;
     max-width: 144rem;
     margin: 0 auto;
+}
+
+.subtitle-section {
+    display: grid;
+    place-items: center;
+
+    h2 {
+        font-size: 2.8rem;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+
+    .line {
+        width: 21.3rem;
+        height: .2rem;
+    }
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-black {
+    color: #000;
+}
+
+.purple {
+    background-color: variables.$primary-color;
+}
+
+.yellow {
+    background-color: variables.$secondary-color;
 }

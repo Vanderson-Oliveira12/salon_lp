@@ -1,0 +1,64 @@
+.about {
+    padding-top: 8.6rem;
+    padding-bottom: 19rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6.2rem;
+    position: relative;
+    overflow-y: hidden;
+
+        .rectangle {
+            position: absolute;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .rectangle:nth-child(1) {
+            right: 0;
+            bottom: 20px;
+        }
+
+        .rectangle:nth-child(2) {
+            left: -58px;
+            bottom: -50px;
+
+        }
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 5.8rem;
+    margin-top: 6.2rem;
+
+        h3 {
+            font-weight: 500;
+            font-size: 2.6rem;
+            max-width: 35.5rem;
+            margin-bottom: 1.6rem;
+        }
+
+        p{
+            line-height: 180%;
+            max-width: 58rem;
+        }
+}
+
+.about-carousel-container {
+    width: 38rem;
+    height: 263.843px;
+    position: relative;
+
+        .background {
+            background: #FFF;
+            box-shadow: 0px 12.52155px 10.01724px 0px rgba(0, 0, 0, 0.04), 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 32px;
+            top: 20px;
+            z-index: -1;
+        }
+}

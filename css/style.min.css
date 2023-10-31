@@ -35,6 +35,37 @@ li {
   margin: 0 auto;
 }
 
+.subtitle-section {
+  display: grid;
+  place-items: center;
+}
+.subtitle-section h2 {
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.subtitle-section .line {
+  width: 21.3rem;
+  height: 0.2rem;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-black {
+  color: #000;
+}
+
+.purple {
+  background-color: #76219E;
+}
+
+.yellow {
+  background-color: #D3D548;
+}
+
 #header {
   width: 100%;
   min-height: 100vh;
@@ -72,7 +103,7 @@ li {
   justify-content: center;
 }
 #nav .nav-content {
-  max-width: 144rem;
+  max-width: 94rem;
   width: 90%;
   margin: 0 auto;
   display: flex;
@@ -174,6 +205,73 @@ li {
 .btn-variant-two:hover {
   color: #76219E;
   border: 1px solid #76219E;
+}
+
+main {
+  width: 100%;
+}
+
+.section-align {
+  max-width: 94rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about {
+  padding-top: 8.6rem;
+  padding-bottom: 19rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6.2rem;
+  position: relative;
+  overflow-y: hidden;
+}
+.about .rectangle {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+}
+.about .rectangle:nth-child(1) {
+  right: 0;
+  bottom: 20px;
+}
+.about .rectangle:nth-child(2) {
+  left: -58px;
+  bottom: -50px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5.8rem;
+  margin-top: 6.2rem;
+}
+.about-content h3 {
+  font-weight: 500;
+  font-size: 2.6rem;
+  max-width: 35.5rem;
+  margin-bottom: 1.6rem;
+}
+.about-content p {
+  line-height: 180%;
+  max-width: 58rem;
+}
+
+.about-carousel-container {
+  width: 38rem;
+  height: 263.843px;
+  position: relative;
+}
+.about-carousel-container .background {
+  background: #FFF;
+  box-shadow: 0px 12.52155px 10.01724px 0px rgba(0, 0, 0, 0.04), 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 32px;
+  top: 20px;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=style.min.css.map */
