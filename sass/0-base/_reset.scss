@@ -1,4 +1,5 @@
 @use 'variables';
+@use "medias";
 
 * {
     margin: 0;
@@ -46,6 +47,10 @@ li {
         text-align: center;
         font-weight: 500;
         margin-bottom: 2rem;
+
+            @include medias.small {
+                font-size: 2.2rem;
+            }
     }
 
     .line {
@@ -61,6 +66,10 @@ li {
     max-width: 55rem;
     margin: 0 auto;
     margin-top: 14px;
+
+    @include medias.small {
+        font-size: 1.4rem;
+    }
 }
 
 .text-white {
