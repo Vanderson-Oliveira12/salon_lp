@@ -50,6 +50,15 @@ li {
   height: 0.2rem;
 }
 
+.text-section {
+  font-weight: 300;
+  text-align: center;
+  line-height: 184.5%;
+  max-width: 55rem;
+  margin: 0 auto;
+  margin-top: 14px;
+}
+
 .text-white {
   color: #fff;
 }
@@ -272,7 +281,7 @@ main {
   position: relative;
 }
 .about-carousel-container .background {
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 12.52155px 10.01724px 0px rgba(0, 0, 0, 0.04), 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
   position: absolute;
   width: 100%;
@@ -304,7 +313,7 @@ main {
   height: 100%;
   width: 100%;
   z-index: 9;
-  background: linear-gradient(0, #1A1A1A 1.96%, rgba(0, 0, 0, 0.66) 63.98%, rgba(0, 0, 0, 0.31) 113.24%, rgba(0, 0, 0, 0) 151.02%);
+  background: linear-gradient(0, #1a1a1a 1.96%, rgba(0, 0, 0, 0.66) 63.98%, rgba(0, 0, 0, 0.31) 113.24%, rgba(0, 0, 0, 0) 151.02%);
 }
 .more .more-content {
   position: absolute;
@@ -317,7 +326,7 @@ main {
   text-align: center;
 }
 .more h2 {
-  color: #FFF;
+  color: #fff;
   font-weight: 100;
   font-size: 2.8rem;
 }
@@ -341,14 +350,6 @@ main {
   background-color: #141414;
   padding-bottom: 10.6rem;
 }
-.services .services-text {
-  font-weight: 300;
-  text-align: center;
-  line-height: 184.5%;
-  max-width: 55rem;
-  margin: 0 auto;
-  margin-top: 14px;
-}
 .services .services-cards {
   margin: 6rem 0;
   display: flex;
@@ -366,7 +367,7 @@ main {
   width: 22rem;
   height: 16.9rem;
   text-align: center;
-  background: #0C0C0C;
+  background: #0c0c0c;
   box-shadow: 0px 1.52952px 8.24613px 0px rgba(211, 213, 72, 0.03), 0px 5.13735px 27.69702px 0px rgba(211, 213, 72, 0.04), 0px 23px 124px 0px rgba(211, 213, 72, 0.07);
   padding: 14px;
   transition: 0.5s ease;
@@ -403,11 +404,11 @@ main {
 }
 .patrocinios h3 {
   flex-shrink: 0;
-  animation: slider-text 100s linear infinite alternate;
+  animation: slider-text 40s linear infinite alternate;
 }
 .patrocinios strong {
   font-weight: 200;
-  color: #A8A6A6;
+  color: #a8a6a6;
   font-weight: 400;
   font-size: 2.6rem;
 }
@@ -417,8 +418,139 @@ main {
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(-3800px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
   }
+}
+/* Contato */
+.contato {
+  padding-top: 8.6rem;
+  padding-bottom: 19rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6.2rem;
+  position: relative;
+  overflow-y: hidden;
+}
+.contato .rectangle {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+}
+.contato .rectangle:nth-child(1) {
+  right: 0;
+  bottom: 20px;
+}
+.contato .rectangle:nth-child(2) {
+  left: -58px;
+  bottom: -50px;
+}
+
+.contato-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10.8rem;
+  margin-top: 6.2rem;
+}
+
+.contato-images {
+  display: flex;
+  flex-direction: column;
+  gap: 6.8rem;
+  width: 50%;
+}
+
+.contato-form {
+  width: 50%;
+  min-height: 100%;
+  height: 100%;
+}
+
+.contato-image:nth-child(1) {
+  align-self: flex-start;
+}
+
+.contato-image:nth-child(2) {
+  align-self: flex-end;
+}
+
+.contato-image {
+  width: 38rem;
+  height: 263.843px;
+  position: relative;
+}
+.contato-image .background {
+  background: #fff;
+  box-shadow: 0px 12.52155px 10.01724px 0px rgba(0, 0, 0, 0.04), 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 28px;
+  top: 20px;
+  z-index: -1;
+}
+
+.contato-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
+}
+.contato-form label p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #9e9696;
+  margin-bottom: 0.6rem;
+}
+.contato-form label input {
+  height: 4.2rem;
+  border: 1px solid #9E9696;
+  width: 100%;
+  padding: 1.6rem 0.8rem;
+  transition: 0.5s ease;
+  outline: none;
+}
+.contato-form label input::placeholder {
+  color: #9E9696;
+  font-size: 1.2rem;
+  font-weight: 300;
+  transition: 0.5s ease;
+}
+.contato-form label input:focus {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.contato-form label input:focus::placeholder {
+  opacity: 0;
+}
+.contato-form input, .contato-form textarea {
+  color: #9E9696;
+  font-size: 1.2rem;
+}
+.contato-form textarea {
+  height: 14.4rem;
+  border: 1px solid #9E9696;
+  width: 100%;
+  padding: 1.6rem 0.8rem;
+  resize: none;
+  outline: none;
+  transition: 0.5s ease;
+}
+.contato-form textarea:focus {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.contato-form textarea::placeholder {
+  color: #9E9696;
+  font-size: 1.2rem;
+  font-weight: 300;
+  transition: 0.5s ease;
+}
+.contato-form button {
+  font-size: 1.4rem;
+  margin-top: 3.8rem;
+  cursor: pointer;
+}
+.contato-form button:hover {
+  color: #76219E;
 }
 
 /*# sourceMappingURL=style.min.css.map */
