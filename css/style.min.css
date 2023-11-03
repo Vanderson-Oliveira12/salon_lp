@@ -105,6 +105,11 @@ li {
 #header .blobs-right {
   right: 0;
 }
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #header .blobs {
+    width: 180px;
+  }
+}
 
 #nav {
   background: rgba(0, 0, 0, 0.3);
@@ -121,6 +126,11 @@ li {
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #nav .logo {
+    width: 12rem;
+  }
+}
 #nav .nav-content {
   max-width: 94rem;
   width: 90%;
@@ -129,11 +139,43 @@ li {
   align-items: center;
   justify-content: space-between;
 }
+#nav .btn-menu {
+  width: 2.8rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #nav .btn-menu {
+    display: block;
+  }
+}
+#nav .btn-close {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: none;
+}
+#nav .btn-close button {
+  font-size: 3.8rem;
+  background-color: transparent;
+  color: #fff;
+  padding: 1.2rem;
+  cursor: pointer;
+  border: none;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #nav .btn-close {
+    display: block;
+  }
+}
 #nav .nav-list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  transition: 0.5s ease;
 }
 #nav .nav-list .nav-link {
   font-weight: 300;
@@ -144,6 +186,21 @@ li {
 }
 #nav .nav-list .nav-link:hover {
   color: #76219E;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #nav .nav-list {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    z-index: 99;
+    width: 80%;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+  }
+}
+#nav .active {
+  right: 0;
 }
 #nav .btn-nav {
   margin-left: 2.2rem;
@@ -163,6 +220,11 @@ li {
     min-height: 68rem;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .header-content .mouse {
+    display: none;
+  }
+}
 .header-content .mouse {
   margin-top: 4rem;
   animation-name: mouse-animation;
@@ -180,6 +242,7 @@ li {
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .header-content h1 {
     font-size: 2.4rem;
+    max-width: 33rem;
   }
 }
 .header-content h2 {
@@ -281,6 +344,14 @@ main {
   left: -58px;
   bottom: -50px;
 }
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .about .rectangle:nth-child(1) {
+    width: 6rem;
+  }
+  .about .rectangle:nth-child(2) {
+    width: 10rem;
+  }
+}
 
 .about-content {
   display: flex;
@@ -330,6 +401,16 @@ main {
   left: 32px;
   top: 20px;
   z-index: -1;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .about-carousel-container {
+    width: 100%;
+    height: auto;
+  }
+  .about-carousel-container .background {
+    left: 10px;
+    top: 15px;
+  }
 }
 
 /* More */
@@ -526,6 +607,7 @@ main {
   .contato-content {
     align-items: center;
     flex-direction: column;
+    gap: 4.2rem;
   }
 }
 
