@@ -110,6 +110,11 @@ li {
     width: 180px;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  #header .blobs {
+    width: 180px;
+  }
+}
 
 #nav {
   background: rgba(0, 0, 0, 0.3);
@@ -127,6 +132,11 @@ li {
   justify-content: center;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  #nav .logo {
+    width: 12rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   #nav .logo {
     width: 12rem;
   }
@@ -151,6 +161,11 @@ li {
     display: block;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  #nav .btn-menu {
+    display: block;
+  }
+}
 #nav .btn-close {
   position: absolute;
   top: 15px;
@@ -166,6 +181,11 @@ li {
   border: none;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  #nav .btn-close {
+    display: block;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   #nav .btn-close {
     display: block;
   }
@@ -199,6 +219,18 @@ li {
     background: rgba(0, 0, 0, 0.9);
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  #nav .nav-list {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    z-index: 99;
+    width: 80%;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+  }
+}
 #nav .active {
   right: 0;
 }
@@ -219,8 +251,14 @@ li {
   .header-content {
     min-height: 68rem;
   }
+  .header-content .mouse {
+    display: none;
+  }
 }
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .header-content {
+    min-height: 68rem;
+  }
   .header-content .mouse {
     display: none;
   }
@@ -245,6 +283,12 @@ li {
     max-width: 33rem;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .header-content h1 {
+    font-size: 2.4rem;
+    max-width: 33rem;
+  }
+}
 .header-content h2 {
   font-weight: 300;
   font-size: 1.6rem;
@@ -252,6 +296,11 @@ li {
   max-width: 60rem;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .header-content h2 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .header-content h2 {
     font-size: 1.4rem;
   }
@@ -352,6 +401,14 @@ main {
     width: 10rem;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .about .rectangle:nth-child(1) {
+    width: 6rem;
+  }
+  .about .rectangle:nth-child(2) {
+    width: 10rem;
+  }
+}
 
 .about-content {
   display: flex;
@@ -361,6 +418,11 @@ main {
   margin-top: 6.2rem;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .about-content {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .about-content {
     flex-direction: column;
   }
@@ -377,11 +439,22 @@ main {
     max-width: 24.5rem;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .about-content h3 {
+    font-size: 1.8rem;
+    max-width: 24.5rem;
+  }
+}
 .about-content p {
   line-height: 180%;
   max-width: 58rem;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .about-content p {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .about-content p {
     font-size: 1.4rem;
   }
@@ -412,6 +485,16 @@ main {
     top: 15px;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .about-carousel-container {
+    width: 100%;
+    height: auto;
+  }
+  .about-carousel-container .background {
+    left: 10px;
+    top: 15px;
+  }
+}
 
 /* More */
 .more {
@@ -423,6 +506,12 @@ main {
   background-color: black;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .more {
+    flex-direction: column;
+    height: auto;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .more {
     flex-direction: column;
     height: auto;
@@ -459,6 +548,11 @@ main {
   font-size: 2.8rem;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .more h2 {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .more h2 {
     font-size: 2.2rem;
   }
@@ -508,6 +602,13 @@ main {
   cursor: pointer;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .services .services-card {
+    width: 90%;
+    height: 18.9rem;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .services .services-card {
     width: 90%;
     height: 18.9rem;
@@ -582,6 +683,11 @@ main {
     width: 100px;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .contato .rectangle {
+    width: 100px;
+  }
+}
 .contato .rectangle:nth-child(1) {
   right: 0;
   bottom: 20px;
@@ -592,6 +698,11 @@ main {
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .rectangle:nth-child(1) {
+    top: 0;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .rectangle:nth-child(1) {
     top: 0;
   }
@@ -610,6 +721,13 @@ main {
     gap: 4.2rem;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .contato-content {
+    align-items: center;
+    flex-direction: column;
+    gap: 4.2rem;
+  }
+}
 
 .contato-images {
   display: flex;
@@ -620,7 +738,15 @@ main {
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .contato-images {
     width: 100%;
-    gap: 3.2rem;
+    gap: 4.2rem;
+    margin-bottom: 6rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .contato-images {
+    width: 100%;
+    gap: 4.2rem;
+    margin-bottom: 6rem;
   }
 }
 
@@ -630,6 +756,11 @@ main {
   height: 100%;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .contato-form {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .contato-form {
     width: 90%;
   }
@@ -644,6 +775,14 @@ main {
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .contato-image:nth-child(1) {
+    align-self: center;
+  }
+  .contato-image:nth-child(2) {
+    align-self: center;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .contato-image:nth-child(1) {
     align-self: center;
   }
@@ -669,10 +808,25 @@ main {
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .contato-image {
     width: 90%;
+    height: auto;
   }
   .contato-image .background {
-    left: -10px;
-    top: -5px;
+    left: 10px;
+    top: 12px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .contato-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+  }
+  .contato-image .background {
+    top: 12px;
+    width: 38rem;
+    left: 60px;
   }
 }
 
@@ -690,14 +844,14 @@ main {
 }
 .contato-form label input {
   height: 4.2rem;
-  border: 1px solid #9E9696;
+  border: 1px solid #9e9696;
   width: 100%;
   padding: 1.6rem 0.8rem;
   transition: 0.5s ease;
   outline: none;
 }
 .contato-form label input::placeholder {
-  color: #9E9696;
+  color: #9e9696;
   font-size: 1.2rem;
   font-weight: 300;
   transition: 0.5s ease;
@@ -708,13 +862,14 @@ main {
 .contato-form label input:focus::placeholder {
   opacity: 0;
 }
-.contato-form input, .contato-form textarea {
-  color: #9E9696;
+.contato-form input,
+.contato-form textarea {
+  color: #9e9696;
   font-size: 1.2rem;
 }
 .contato-form textarea {
   height: 14.4rem;
-  border: 1px solid #9E9696;
+  border: 1px solid #9e9696;
   width: 100%;
   padding: 1.6rem 0.8rem;
   resize: none;
@@ -725,7 +880,7 @@ main {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .contato-form textarea::placeholder {
-  color: #9E9696;
+  color: #9e9696;
   font-size: 1.2rem;
   font-weight: 300;
   transition: 0.5s ease;
@@ -752,6 +907,11 @@ main {
     padding-bottom: 8.6rem;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .localizacao {
+    padding-bottom: 8.6rem;
+  }
+}
 
 .localizacao-content {
   display: flex;
@@ -774,6 +934,13 @@ main {
     justify-content: flex-start;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .localizacao-content .localizacao-infor {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
 .localizacao-content .mapa {
   width: 60rem;
   height: 35rem;
@@ -783,6 +950,12 @@ main {
   width: 100%;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .localizacao-content .mapa {
+    height: 35rem;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .localizacao-content .mapa {
     height: 35rem;
     width: 80%;
@@ -801,6 +974,12 @@ main {
     font-size: 1.4rem;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .localizacao-content .localizacao-item {
+    font-weight: 200;
+    font-size: 1.4rem;
+  }
+}
 
 #footer {
   width: 100%;
@@ -813,6 +992,11 @@ main {
     padding-bottom: 3.2rem;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  #footer {
+    padding-bottom: 3.2rem;
+  }
+}
 
 .footer-items {
   display: flex;
@@ -820,6 +1004,12 @@ main {
   align-items: flex-start;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .footer-items {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .footer-items {
     flex-direction: column;
     gap: 2.4rem;
@@ -848,6 +1038,16 @@ main {
   display: flex;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .footer-social {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .footer-social img {
+    width: 22px;
+    height: 22px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .footer-social {
     width: 100%;
     margin-top: 2rem;

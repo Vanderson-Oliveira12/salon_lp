@@ -30,6 +30,12 @@
                 width: 180px;
             }
         }
+
+        @include medias.small-medium {
+            .blobs {
+                width: 180px;
+            }
+        }
 }
 
 #nav {
@@ -48,6 +54,10 @@
         justify-content: center;
 
         @include medias.small {
+            width: 12rem;
+        }
+
+        @include medias.small-medium {
             width: 12rem;
         }
     }
@@ -71,6 +81,10 @@
         @include medias.small {
             display: block;
         }
+
+        @include medias.small-medium {
+            display: block;
+        }
     }
 
     .btn-close {
@@ -88,6 +102,10 @@
         }
 
         @include medias.small {
+            display: block;
+        }
+
+        @include medias.small-medium {
             display: block;
         }
     }
@@ -121,6 +139,17 @@
                 flex-direction: column;
                 background: rgba(0, 0, 0, 0.9);
             }
+
+            @include medias.small-medium {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100%;
+                z-index: 99;
+                width: 80%;
+                flex-direction: column;
+                background: rgba(0, 0, 0, 0.9);
+            }
     }
 
     .active {
@@ -143,13 +172,21 @@
 
     @include medias.small {
         min-height: 68rem;
-    }
 
-    @include medias.small {
         .mouse {
             display: none;
         }
     }
+
+    @include medias.small-medium {
+        min-height: 68rem;
+
+        .mouse {
+            display: none;
+        }
+    }
+
+
 
         .mouse {
             margin-top: 4rem;
@@ -170,6 +207,11 @@
                 font-size: 2.4rem;
                 max-width: 33rem;
             }
+
+            @include medias.small-medium {
+                font-size: 2.4rem;
+                max-width: 33rem;
+            }
         }
 
         h2 {
@@ -179,6 +221,9 @@
            max-width: 60rem;
 
            @include medias.small {
+            font-size: 1.4rem;
+         }
+         @include medias.small-medium {
             font-size: 1.4rem;
          }
         }

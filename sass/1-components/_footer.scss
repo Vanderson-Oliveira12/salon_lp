@@ -9,6 +9,10 @@
   @include medias.small {
     padding-bottom: 3.2rem;
   }
+
+  @include medias.small-medium {
+    padding-bottom: 3.2rem;
+  }
 }
 
 .footer-items {
@@ -17,6 +21,11 @@
   align-items: flex-start;
 
   @include medias.small {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  @include medias.small-medium {
     flex-direction: column;
     gap: 2.4rem;
   }
@@ -48,6 +57,16 @@
   display: flex;
 
   @include medias.small {
+    width: 100%;
+    margin-top: 2rem;
+
+    img {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  @include medias.small-medium {
     width: 100%;
     margin-top: 2rem;
 

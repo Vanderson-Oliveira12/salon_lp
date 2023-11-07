@@ -35,6 +35,16 @@
       width: 10rem;
     }
   }
+
+  @include medias.small-medium {
+    .rectangle:nth-child(1) {
+      width: 6rem;
+    }
+
+    .rectangle:nth-child(2) {
+      width: 10rem;
+    }
+  }
 }
 
 .about-content {
@@ -49,26 +59,38 @@
     flex-direction: column;
   }
 
+  @include medias.small-medium {
+    flex-direction: column;
+  }
+
   h3 {
     font-weight: 500;
     font-size: 2.6rem;
     max-width: 35.5rem;
     margin-bottom: 1.6rem;
 
-      @include medias.small {
-        font-size: 1.8rem;
-    max-width: 24.5rem;
+    @include medias.small {
+      font-size: 1.8rem;
+      max-width: 24.5rem;
+    }
 
-      }
+    @include medias.small-medium {
+      font-size: 1.8rem;
+      max-width: 24.5rem;
+    }
   }
 
   p {
     line-height: 180%;
     max-width: 58rem;
 
-      @include medias.small {
-        font-size: 1.4rem;
-      }
+    @include medias.small {
+      font-size: 1.4rem;
+    }
+
+    @include medias.small-medium {
+      font-size: 1.4rem;
+    }
   }
 }
 
@@ -98,6 +120,16 @@
       top: 15px;
     }
   }
+
+  @include medias.small-medium {
+    width: 100%;
+    height: auto;
+
+    .background {
+      left: 10px;
+      top: 15px;
+    }
+  }
 }
 
 /* More */
@@ -111,6 +143,11 @@
   background-color: black;
 
   @include medias.small {
+    flex-direction: column;
+    height: auto;
+  }
+
+  @include medias.small-medium {
     flex-direction: column;
     height: auto;
   }
@@ -157,6 +194,10 @@
     @include medias.small {
       font-size: 2.2rem;
     }
+
+    @include medias.small-medium {
+      font-size: 2.2rem;
+    }
   }
 
   h2.one {
@@ -166,8 +207,6 @@
   h2.two {
     max-width: 32rem;
   }
-
-  
 
   img {
     width: 100%;
@@ -182,8 +221,13 @@
 .services {
   color: #fff;
   padding-top: 8.6rem;
-  background: rgb(20,20,20);
-  background: linear-gradient(-190deg, rgba(20,20,20,1) 0%, rgba(16,16,16,1) 70%, rgba(211,213,72, 1) 140%);
+  background: rgb(20, 20, 20);
+  background: linear-gradient(
+    -190deg,
+    rgba(20, 20, 20, 1) 0%,
+    rgba(16, 16, 16, 1) 70%,
+    rgba(211, 213, 72, 1) 140%
+  );
   padding-bottom: 10.6rem;
 
   .services-cards {
@@ -193,8 +237,6 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 2rem;
-
-
   }
 
   .services-card {
@@ -215,9 +257,15 @@
     cursor: pointer;
 
     @include medias.small {
-        width: 90%;
-        height: 18.9rem;
-        margin: 0 auto;
+      width: 90%;
+      height: 18.9rem;
+      margin: 0 auto;
+    }
+
+    @include medias.small-medium {
+      width: 90%;
+      height: 18.9rem;
+      margin: 0 auto;
     }
 
     &:hover {
@@ -299,6 +347,10 @@
     @include medias.small {
       width: 100px;
     }
+
+    @include medias.small-medium {
+      width: 100px;
+    }
   }
 
   .rectangle:nth-child(1) {
@@ -321,18 +373,33 @@
   }
 }
 
+@include medias.small-medium {
+  .rectangle:nth-child(1) {
+    top: 0;
+  }
+
+  .rectangle:nth-child(2) {
+  }
+}
+
 .contato-content {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-    gap: 10.8rem;
+  gap: 10.8rem;
   margin-top: 6.2rem;
 
-    @include medias.small {
-      align-items: center;
-      flex-direction: column;
-      gap: 4.2rem;
-    }
+  @include medias.small {
+    align-items: center;
+    flex-direction: column;
+    gap: 4.2rem;
+  }
+
+  @include medias.small-medium {
+    align-items: center;
+    flex-direction: column;
+    gap: 4.2rem;
+  }
 }
 
 .contato-images {
@@ -341,10 +408,17 @@
   gap: 6.8rem;
   width: 50%;
 
-    @include medias.small {
-      width: 100%;
-      gap: 3.2rem;
-    }
+  @include medias.small {
+    width: 100%;
+    gap: 4.2rem;
+    margin-bottom: 6rem;
+  }
+
+  @include medias.small-medium {
+    width: 100%;
+    gap: 4.2rem;
+    margin-bottom: 6rem;
+  }
 }
 
 .contato-form {
@@ -352,9 +426,13 @@
   min-height: 100%;
   height: 100%;
 
-    @include medias.small {
-      width: 90%;
-    }
+  @include medias.small {
+    width: 90%;
+  }
+
+  @include medias.small-medium {
+    width: 90%;
+  }
 }
 
 .contato-image:nth-child(1) {
@@ -365,11 +443,21 @@
   align-self: flex-end;
 }
 
-@include medias.small  {
+@include medias.small {
   .contato-image:nth-child(1) {
     align-self: center;
   }
-  
+
+  .contato-image:nth-child(2) {
+    align-self: center;
+  }
+}
+
+@include medias.small-medium {
+  .contato-image:nth-child(1) {
+    align-self: center;
+  }
+
   .contato-image:nth-child(2) {
     align-self: center;
   }
@@ -394,22 +482,36 @@
 
   @include medias.small {
     width: 90%;
+    height: auto;
 
-      .background {
-        left: -10px;
-        top: -5px;
+    .background {
+      left: 10px;
+      top: 12px;
+    }
+  }
 
-      }
+  @include medias.small-medium {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+
+    .background {
+      top: 12px;
+      width: 38rem;
+      left: 60px;
+    }
   }
 }
 
 .contato-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
 
-    label {
+  label {
     p {
       font-size: 1.4rem;
       font-weight: 300;
@@ -419,55 +521,55 @@
 
     input {
       height: 4.2rem;
-      border: 1px solid #9E9696;
+      border: 1px solid #9e9696;
       width: 100%;
-      padding: 1.6rem .8rem;
-      transition: .5s ease;
-        outline: none;
+      padding: 1.6rem 0.8rem;
+      transition: 0.5s ease;
+      outline: none;
     }
 
     input::placeholder {
-        color: #9E9696;
-        font-size: 1.2rem;
-        font-weight: 300;
-        transition: .5s ease;
+      color: #9e9696;
+      font-size: 1.2rem;
+      font-weight: 300;
+      transition: 0.5s ease;
     }
 
     input:focus {
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
 
     input:focus::placeholder {
-        opacity: 0;
+      opacity: 0;
     }
   }
 
-  input, textarea {
-    color: #9E9696;
+  input,
+  textarea {
+    color: #9e9696;
     font-size: 1.2rem;
   }
 
   textarea {
     height: 14.4rem;
-    border: 1px solid #9E9696;
+    border: 1px solid #9e9696;
     width: 100%;
-    padding: 1.6rem .8rem;
+    padding: 1.6rem 0.8rem;
     resize: none;
     outline: none;
-    transition: .5s ease;
+    transition: 0.5s ease;
 
     &:focus {
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
   }
 
   textarea::placeholder {
-    color: #9E9696;
+    color: #9e9696;
     font-size: 1.2rem;
     font-weight: 300;
-    transition: .5s ease;
-}
+    transition: 0.5s ease;
+  }
 
   button {
     font-size: 1.4rem;
@@ -485,14 +587,22 @@
 .localizacao {
   color: #fff;
   padding-top: 8.6rem;
-  background: rgb(20,20,20);
-  background: linear-gradient(-190deg, rgba(20,20,20,1) 0%, rgba(16,16,16,1) 70%, rgba(211,213,72, 1) 140%);
+  background: rgb(20, 20, 20);
+  background: linear-gradient(
+    -190deg,
+    rgba(20, 20, 20, 1) 0%,
+    rgba(16, 16, 16, 1) 70%,
+    rgba(211, 213, 72, 1) 140%
+  );
   padding-bottom: 19.1rem;
 
   @include medias.small {
     padding-bottom: 8.6rem;
   }
-  
+
+  @include medias.small-medium {
+    padding-bottom: 8.6rem;
+  }
 }
 
 .localizacao-content {
@@ -502,35 +612,44 @@
   justify-content: center;
   margin-top: 6.2rem;
 
-  .localizacao-infor{
+  .localizacao-infor {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4.5rem;
     margin-top: 7.2rem;
 
-      @include medias.small {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-      }
-      
+    @include medias.small {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    @include medias.small-medium {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
   }
 
   .mapa {
     width: 60rem;
     height: 35rem;
 
-      iframe {
-        height: 100%;
-        width: 100%;
-      }
+    iframe {
+      height: 100%;
+      width: 100%;
+    }
 
-      @include medias.small {
-        height: 35rem;
-        width: 80%;
+    @include medias.small {
+      height: 35rem;
+      width: 80%;
+    }
 
-      }
+    @include medias.small-medium {
+      height: 35rem;
+      width: 80%;
+    }
   }
 
   .localizacao-item {
@@ -540,9 +659,14 @@
     gap: 1.8rem;
     font-weight: 500;
 
-      @include medias.small { 
-        font-weight: 200;
-        font-size: 1.4rem;
-      }
+    @include medias.small {
+      font-weight: 200;
+      font-size: 1.4rem;
+    }
+
+    @include medias.small-medium {
+      font-weight: 200;
+      font-size: 1.4rem;
+    }
   }
 }
