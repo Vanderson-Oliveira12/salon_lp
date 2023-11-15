@@ -1,7 +1,7 @@
 @use "../0-base/variables";
 @use "../0-base/medias";
 
-.about {
+#about {
   padding-top: 8.6rem;
   padding-bottom: 19rem;
   display: flex;
@@ -45,6 +45,17 @@
       width: 10rem;
     }
   }
+
+  @include medias.medium {
+    .rectangle:nth-child(1) {
+      width: 6rem;
+    }
+
+    .rectangle:nth-child(2) {
+      width: 10rem;
+      top: 0;
+    }
+  }
 }
 
 .about-content {
@@ -78,6 +89,10 @@
       font-size: 1.8rem;
       max-width: 24.5rem;
     }
+
+    @include medias.medium {
+      font-size: 1.8rem;
+    }
   }
 
   p {
@@ -91,6 +106,10 @@
     @include medias.small-medium {
       font-size: 1.4rem;
     }
+
+    @include medias.medium {
+      font-size: 1.4rem;
+    }
   }
 }
 
@@ -98,6 +117,22 @@
   width: 38rem;
   height: 263.843px;
   position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      pointer-events: none;
+      transition: .5s ease;
+    }
+
+    img.shown {
+      opacity: 1;
+      pointer-events: all;
+    }
 
   .background {
     background: #fff;
@@ -159,6 +194,12 @@
     height: 100%;
     width: 100%;
     position: relative;
+    overflow: hidden;
+
+
+      img {
+        transition: .5s ease;
+      }
   }
 
   .background {
@@ -184,6 +225,15 @@
     display: grid;
     place-items: center;
     text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+
+    &:hover {
+
+        ~ img {
+          transform: scale(1.05);
+        }
+    }
   }
 
   h2 {
@@ -218,7 +268,7 @@
 
 /* Services */
 
-.services {
+#services {
   color: #fff;
   padding-top: 8.6rem;
   background: rgb(20, 20, 20);
@@ -237,6 +287,11 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 2rem;
+
+      @include medias.medium {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
   }
 
   .services-card {
@@ -267,6 +322,11 @@
       height: 18.9rem;
       margin: 0 auto;
     }
+
+    @include medias.medium {
+      width: 100%;
+    }
+
 
     &:hover {
       box-shadow: 0px 0.3623px 3.62304px 0px rgba(211, 213, 72, 0.17),
@@ -330,7 +390,7 @@
 
 /* Contato */
 
-.contato {
+#agendar {
   padding-top: 8.6rem;
   padding-bottom: 19rem;
   display: flex;
@@ -630,6 +690,11 @@
       align-items: flex-start;
       justify-content: flex-start;
     }
+
+    @include medias.medium {
+      gap: 2.2rem;
+      width: 90%;
+    }
   }
 
   .mapa {
@@ -665,6 +730,11 @@
     }
 
     @include medias.small-medium {
+      font-weight: 200;
+      font-size: 1.4rem;
+    }
+
+    @include medias.medium {
       font-weight: 200;
       font-size: 1.4rem;
     }
