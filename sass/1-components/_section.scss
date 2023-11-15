@@ -126,7 +126,7 @@
       left: 0;
       opacity: 0;
       pointer-events: none;
-      transition: .5s ease;
+      transition: 3s ease;
     }
 
     img.shown {
@@ -147,9 +147,7 @@
   }
 
   @include medias.small {
-    width: 100%;
-    height: auto;
-
+    
     .background {
       left: 10px;
       top: 15px;
@@ -157,8 +155,6 @@
   }
 
   @include medias.small-medium {
-    width: 100%;
-    height: auto;
 
     .background {
       left: 10px;

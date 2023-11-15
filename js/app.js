@@ -16,7 +16,10 @@ function onMenu() {
 }
 
 function onMenuScroll() {
-  let menuEl = document.querySelector("#nav");
+  let menuEl = document.querySelector("#nav-container");
+  let menuSubstitutoContainerEl = document.querySelector(".nav-content-bk");
+
+  console.log()
 
   window.addEventListener("scroll", calcMenuPos);
 
@@ -25,10 +28,11 @@ function onMenuScroll() {
 
     if (posScroll > 15) {
       menuEl.classList.add("nav-fixed");
-
+      menuSubstitutoContainerEl.style.display = 'block'
       return;
     }
 
+    menuSubstitutoContainerEl.style.display = 'none'
     menuEl.classList.remove("nav-fixed");
   }
 }
@@ -50,7 +54,7 @@ function onCarousel() {
     }
 
     carouselImages[index].classList.add("shown");
-  }, 3000);
+  }, 4000);
 }
 
 onCarousel();

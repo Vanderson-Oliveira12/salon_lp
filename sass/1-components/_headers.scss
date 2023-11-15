@@ -44,7 +44,7 @@
   }
 }
 
-#nav {
+#nav-container {
   background: rgba(0, 0, 0, 0.3);
   height: 10rem;
   display: flex;
@@ -264,6 +264,12 @@
   .btn-header {
     margin-top: 6rem;
   }
+}
+
+.nav-content-bk {
+  height: 10rem;
+  width: 100%;
+  display: none;
 }
 
 @keyframes mouse-animation {

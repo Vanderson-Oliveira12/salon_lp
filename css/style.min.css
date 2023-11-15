@@ -131,7 +131,7 @@ li {
   }
 }
 
-#nav {
+#nav-container {
   background: rgba(0, 0, 0, 0.3);
   height: 10rem;
   display: flex;
@@ -140,7 +140,7 @@ li {
   position: relative;
   transition: 0.5s ease;
 }
-#nav .logo {
+#nav-container .logo {
   color: #fff;
   width: 16rem;
   display: flex;
@@ -148,21 +148,21 @@ li {
   justify-content: center;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  #nav .logo {
+  #nav-container .logo {
     width: 12rem;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 767px) {
-  #nav .logo {
+  #nav-container .logo {
     width: 12rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  #nav .logo {
+  #nav-container .logo {
     width: 12rem;
   }
 }
-#nav .nav-content {
+#nav-container .nav-content {
   max-width: 94rem;
   width: 90%;
   margin: 0 auto;
@@ -170,7 +170,7 @@ li {
   align-items: center;
   justify-content: space-between;
 }
-#nav .btn-menu {
+#nav-container .btn-menu {
   width: 2.8rem;
   background-color: transparent;
   border: none;
@@ -178,22 +178,22 @@ li {
   display: none;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  #nav .btn-menu {
+  #nav-container .btn-menu {
     display: block;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 767px) {
-  #nav .btn-menu {
+  #nav-container .btn-menu {
     display: block;
   }
 }
-#nav .btn-close {
+#nav-container .btn-close {
   position: absolute;
   top: 15px;
   left: 15px;
   display: none;
 }
-#nav .btn-close button {
+#nav-container .btn-close button {
   font-size: 3.8rem;
   background-color: transparent;
   color: #fff;
@@ -202,34 +202,34 @@ li {
   border: none;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  #nav .btn-close {
+  #nav-container .btn-close {
     display: block;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 767px) {
-  #nav .btn-close {
+  #nav-container .btn-close {
     display: block;
   }
 }
-#nav .nav-list {
+#nav-container .nav-list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
   transition: 0.5s ease;
 }
-#nav .nav-list .nav-link {
+#nav-container .nav-list .nav-link {
   font-weight: 300;
   color: #fff;
   padding: 1.2rem 0;
   transition: 0.5s ease;
   font-size: 1.4rem;
 }
-#nav .nav-list .nav-link:hover {
+#nav-container .nav-list .nav-link:hover {
   color: #76219E;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  #nav .nav-list {
+  #nav-container .nav-list {
     position: fixed;
     top: 0;
     right: -100%;
@@ -241,7 +241,7 @@ li {
   }
 }
 @media screen and (min-width: 481px) and (max-width: 767px) {
-  #nav .nav-list {
+  #nav-container .nav-list {
     position: fixed;
     top: 0;
     right: -100%;
@@ -252,13 +252,13 @@ li {
     background: rgba(0, 0, 0, 0.9);
   }
 }
-#nav .active {
+#nav-container .active {
   right: 0;
 }
-#nav .btn-nav {
+#nav-container .btn-nav {
   margin-left: 2.2rem;
 }
-#nav.nav-fixed {
+#nav-container.nav-fixed {
   position: fixed;
   top: 0;
   left: 0;
@@ -352,6 +352,12 @@ li {
 }
 .header-content .btn-header {
   margin-top: 6rem;
+}
+
+.nav-content-bk {
+  height: 10rem;
+  width: 100%;
+  display: none;
 }
 
 @keyframes mouse-animation {
@@ -531,7 +537,7 @@ main {
   left: 0;
   opacity: 0;
   pointer-events: none;
-  transition: 0.5s ease;
+  transition: 3s ease;
 }
 .about-carousel-container img.shown {
   opacity: 1;
@@ -548,20 +554,12 @@ main {
   z-index: -1;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  .about-carousel-container {
-    width: 100%;
-    height: auto;
-  }
   .about-carousel-container .background {
     left: 10px;
     top: 15px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 767px) {
-  .about-carousel-container {
-    width: 100%;
-    height: auto;
-  }
   .about-carousel-container .background {
     left: 10px;
     top: 15px;
